@@ -9,8 +9,8 @@
 import SafariServices
 import UIKit
 
-extension SFSafariViewController {
-    static func open(_ url: URL) {
+public extension SFSafariViewController {
+    public static func open(_ url: URL) {
         guard let window = UIApplication.shared.delegate?.window,
             let rootVC = window?.rootViewController else {
                 return

@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension String {
-    func contains(_ find: String, ignoreCase: Bool = true) -> Bool{
+public extension String {
+    public func contains(_ find: String, ignoreCase: Bool = true) -> Bool{
         let option: NSString.CompareOptions = {
             return ignoreCase ? .caseInsensitive : .literal
         }()
@@ -17,8 +17,8 @@ extension String {
     }
 }
 
-extension String {
-    func unescapeHTML() -> String {
+public extension String {
+    public func unescapeHTML() -> String {
         var newStr = self
         let char_dict = [
             "&amp;": "&",
@@ -32,7 +32,7 @@ extension String {
         }
         return newStr
     }
-    func escapeHTML() -> String {
+    public func escapeHTML() -> String {
         var newStr = self
         let char_dict = [
             "&amp;": "&",

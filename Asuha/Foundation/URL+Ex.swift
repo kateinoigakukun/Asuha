@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension URL {
-    var queryItem: [String: String] {
+public extension URL {
+    public var queryItem: [String: String] {
         let splitedQuery = self.query?
             .components(separatedBy: CharacterSet(charactersIn: "&"))
 

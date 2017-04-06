@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension Array {
-    subscript (safe index: Int) -> Element? {
+public extension Array {
+    public subscript (safe index: Int) -> Element? {
         get {
             return self.indices ~= index ? self[index] : nil
         }
@@ -25,13 +25,13 @@ extension Array {
     }
 }
 
-extension Array where Element: Equatable {
-    mutating func appendUnique(element: Element) {
+public extension Array where Element: Equatable {
+    public mutating func appendUnique(element: Element) {
         if contains(element) { return }
         append(element)
     }
 
-    mutating func appendUnique(contentsOf: [Element]) {
+    public mutating func appendUnique(contentsOf: [Element]) {
         let contents = contentsOf.filter { !self.contains($0) }
         append(contentsOf: contents)
     }

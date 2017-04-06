@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol AnyOptional {
+public protocol AnyOptional {
     associatedtype Wrapped
     var value: Wrapped? { get }
 }
 
 extension Optional: AnyOptional {
-    var value: Wrapped? {
+    public var value: Wrapped? {
         return self
     }
 }

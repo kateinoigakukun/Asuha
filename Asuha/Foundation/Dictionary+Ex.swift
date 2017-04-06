@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension Dictionary where Value : Equatable {
-    func allKeysFor(_ value : Value) -> [Key] {
+public extension Dictionary where Value : Equatable {
+    public func allKeysFor(_ value : Value) -> [Key] {
         return self.filter { $1 == value }.map { $0.0 }
     }
 }

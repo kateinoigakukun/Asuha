@@ -10,7 +10,7 @@ import Foundation
 
 infix operator ||= : AssignmentPrecedence
 
-func ||= <T>( rhs: inout T?, lhs: T) {
+public func ||= <T>( rhs: inout T?, lhs: T) {
     if rhs == nil {
         rhs = lhs
     }

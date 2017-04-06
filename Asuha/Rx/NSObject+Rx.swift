@@ -9,11 +9,11 @@
 import Foundation
 import RxSwift
 
-extension NSObject {
+public extension NSObject {
     struct AssociatedKeys {
         static var disposeBagKey = "DisposeBagKey"
     }
-    var disposeBag: DisposeBag {
+    public var disposeBag: DisposeBag {
         get {
             guard let bag = objc_getAssociatedObject(self, &type(of: self).AssociatedKeys.disposeBagKey) as? DisposeBag else {
                 let newDisposeBag = DisposeBag()

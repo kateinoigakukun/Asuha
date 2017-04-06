@@ -9,8 +9,8 @@
 import SafariServices
 import RxSwift
 
-extension Reactive where Base: SFSafariViewController {
-    static var open: AnyObserver<URL> {
+public extension Reactive where Base: SFSafariViewController {
+    public static var open: AnyObserver<URL> {
         return AnyObserver.init(eventHandler: { (event) in
             guard case let .next(url) = event else {
                 return

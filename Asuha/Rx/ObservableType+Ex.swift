@@ -9,15 +9,15 @@
 import Foundation
 import RxSwift
 
-extension ObservableType {
-    func subscribe(onNext: @escaping ((Self.E) -> Void)) -> Disposable {
+public extension ObservableType {
+    public func subscribe(onNext: @escaping ((Self.E) -> Void)) -> Disposable {
         return subscribe(onNext: onNext, onError: nil, onCompleted: nil, onDisposed: nil)
     }
 }
 
-extension ObservableType where E: AnyOptional {
+public extension ObservableType where E: AnyOptional {
 
-    func filterNil() -> Observable<E.Wrapped> {
+    public func filterNil() -> Observable<E.Wrapped> {
         return self.flatMap { element -> Observable<E.Wrapped> in
             guard let value = element.value else {
                 return Observable<E.Wrapped>.empty()

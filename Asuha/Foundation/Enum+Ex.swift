@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol EnumExtension {}
+public protocol EnumExtension {}
 
 private struct EnumIterator<E: Hashable>: IteratorProtocol {
     var hash: Int
@@ -29,7 +29,7 @@ private struct EnumIterator<E: Hashable>: IteratorProtocol {
     }
 }
 
-extension EnumExtension where Self: Hashable {
+public extension EnumExtension where Self: Hashable {
     static var all: [Self] {
         return Array(IteratorSequence(EnumIterator(type: Self.self)))
     }
