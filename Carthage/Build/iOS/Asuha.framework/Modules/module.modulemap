@@ -1,0 +1,10 @@
+framework module Asuha {
+  umbrella header "Asuha.h"
+
+  export *
+  module * { export * }
+}
+
+module Asuha.Swift {
+    header "Asuha-Swift.h"
+}
