@@ -12,7 +12,6 @@ extension String {
     func contains(_ find: String, ignoreCase: Bool = true) -> Bool{
         let option: NSString.CompareOptions = {
             return ignoreCase ? .caseInsensitive : .literal
-
         }()
         return self.range(of: find, options: option) != nil
     }

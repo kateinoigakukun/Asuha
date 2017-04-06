@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E023CBA61E9639DB00F91145 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
+		E023CBA71E9639DB00F91145 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E023CBA41E9639DB00F91145 /* RxSwift.framework */; };
+		E023CBAA1E963A3000F91145 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBA91E963A3000F91145 /* NSObject+Rx.swift */; };
+		E023CBAF1E963AC400F91145 /* ObservableType+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBAE1E963AC400F91145 /* ObservableType+Ex.swift */; };
+		E023CBB11E963E3700F91145 /* AnyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBB01E963E3700F91145 /* AnyOptional.swift */; };
+		E023CBB81E963EEB00F91145 /* SFSafariViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBB71E963EEB00F91145 /* SFSafariViewController+Ex.swift */; };
+		E023CBBA1E96483100F91145 /* SFSafariViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBB91E96483100F91145 /* SFSafariViewController+Rx.swift */; };
+		E023CBBC1E964A4000F91145 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBBB1E964A4000F91145 /* Operators.swift */; };
+		E023CBBE1E964CE300F91145 /* URL+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBBD1E964CE300F91145 /* URL+Ex.swift */; };
+		E023CBC11E964E4D00F91145 /* RxCocoa.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
+		E023CBC21E964E4D00F91145 /* RxSwift.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA41E9639DB00F91145 /* RxSwift.framework */; };
+		E023CBC31E964E5C00F91145 /* RxCocoa.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
+		E023CBC41E964E5C00F91145 /* RxSwift.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA41E9639DB00F91145 /* RxSwift.framework */; };
+		E023CBC51E964E8300F91145 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
+		E023CBC61E964E8300F91145 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E023CBA41E9639DB00F91145 /* RxSwift.framework */; };
 		E0443B8E1E8F9EDE003457DF /* Asuha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0443B841E8F9EDE003457DF /* Asuha.framework */; };
 		E0443B931E8F9EDE003457DF /* AsuhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443B921E8F9EDE003457DF /* AsuhaTests.swift */; };
 		E0443B951E8F9EDE003457DF /* Asuha.h in Headers */ = {isa = PBXBuildFile; fileRef = E0443B871E8F9EDE003457DF /* Asuha.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,6 +36,7 @@
 		E0443BBB1E8FA46F003457DF /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BBA1E8FA46F003457DF /* Array+Ex.swift */; };
 		E0443BBD1E8FA4FD003457DF /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BBC1E8FA4FD003457DF /* UIViewController+Ex.swift */; };
 		E0443BBF1E8FA546003457DF /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BBE1E8FA546003457DF /* Dictionary+Ex.swift */; };
+		E05A38BC1E924093002A259A /* Bool+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05A38BB1E924093002A259A /* Bool+Ex.swift */; };
 		E082B0911E90EFFA00379183 /* Enum+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E082B0901E90EFFA00379183 /* Enum+Ex.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E023CBA21E9639DB00F91145 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		E023CBA31E9639DB00F91145 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E023CBA41E9639DB00F91145 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E023CBA91E963A3000F91145 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
+		E023CBAE1E963AC400F91145 /* ObservableType+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+Ex.swift"; sourceTree = "<group>"; };
+		E023CBB01E963E3700F91145 /* AnyOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOptional.swift; sourceTree = "<group>"; };
+		E023CBB21E963E8700F91145 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		E023CBB41E963E8C00F91145 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E023CBB71E963EEB00F91145 /* SFSafariViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSafariViewController+Ex.swift"; sourceTree = "<group>"; };
+		E023CBB91E96483100F91145 /* SFSafariViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSafariViewController+Rx.swift"; sourceTree = "<group>"; };
+		E023CBBB1E964A4000F91145 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		E023CBBD1E964CE300F91145 /* URL+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Ex.swift"; sourceTree = "<group>"; };
+		E023CBC71E964E8300F91145 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		E0443B841E8F9EDE003457DF /* Asuha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Asuha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0443B871E8F9EDE003457DF /* Asuha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Asuha.h; sourceTree = "<group>"; };
 		E0443B881E8F9EDE003457DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +81,7 @@
 		E0443BBA1E8FA46F003457DF /* Array+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
 		E0443BBC1E8FA4FD003457DF /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		E0443BBE1E8FA546003457DF /* Dictionary+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ex.swift"; sourceTree = "<group>"; };
+		E05A38BB1E924093002A259A /* Bool+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Ex.swift"; sourceTree = "<group>"; };
 		E082B0901E90EFFA00379183 /* Enum+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enum+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E023CBA61E9639DB00F91145 /* RxCocoa.framework in Frameworks */,
+				E023CBA71E9639DB00F91145 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E023CBC51E964E8300F91145 /* RxCocoa.framework in Frameworks */,
+				E023CBC61E964E8300F91145 /* RxSwift.framework in Frameworks */,
 				E0443B8E1E8F9EDE003457DF /* Asuha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,12 +108,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E023CBA11E9639D900F91145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E023CBC71E964E8300F91145 /* RxTest.framework */,
+				E023CBB41E963E8C00F91145 /* Foundation.framework */,
+				E023CBB21E963E8700F91145 /* SafariServices.framework */,
+				E023CBA21E9639DB00F91145 /* RxBlocking.framework */,
+				E023CBA31E9639DB00F91145 /* RxCocoa.framework */,
+				E023CBA41E9639DB00F91145 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E023CBA81E9639E800F91145 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				E023CBA91E963A3000F91145 /* NSObject+Rx.swift */,
+				E023CBAE1E963AC400F91145 /* ObservableType+Ex.swift */,
+				E023CBB01E963E3700F91145 /* AnyOptional.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		E023CBB61E963EB900F91145 /* SafariServices */ = {
+			isa = PBXGroup;
+			children = (
+				E023CBB71E963EEB00F91145 /* SFSafariViewController+Ex.swift */,
+				E023CBB91E96483100F91145 /* SFSafariViewController+Rx.swift */,
+			);
+			path = SafariServices;
+			sourceTree = "<group>";
+		};
 		E0443B7A1E8F9EDE003457DF = {
 			isa = PBXGroup;
 			children = (
 				E0443B861E8F9EDE003457DF /* Asuha */,
 				E0443B911E8F9EDE003457DF /* AsuhaTests */,
 				E0443B851E8F9EDE003457DF /* Products */,
+				E023CBA11E9639D900F91145 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				E0443B871E8F9EDE003457DF /* Asuha.h */,
+				E023CBB61E963EB900F91145 /* SafariServices */,
+				E023CBA81E9639E800F91145 /* Rx */,
 				E0443BA31E8F9FC1003457DF /* Foundation */,
 				E0443BA21E8F9F91003457DF /* UIKit */,
 				E0443B881E8F9EDE003457DF /* Info.plist */,
@@ -134,6 +203,9 @@
 				E0443BBA1E8FA46F003457DF /* Array+Ex.swift */,
 				E0443BBE1E8FA546003457DF /* Dictionary+Ex.swift */,
 				E082B0901E90EFFA00379183 /* Enum+Ex.swift */,
+				E05A38BB1E924093002A259A /* Bool+Ex.swift */,
+				E023CBBB1E964A4000F91145 /* Operators.swift */,
+				E023CBBD1E964CE300F91145 /* URL+Ex.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -234,6 +306,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E023CBC11E964E4D00F91145 /* RxCocoa.framework in Resources */,
+				E023CBC21E964E4D00F91145 /* RxSwift.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +315,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E023CBC31E964E5C00F91145 /* RxCocoa.framework in Resources */,
+				E023CBC41E964E5C00F91145 /* RxSwift.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,14 +331,22 @@
 				E082B0911E90EFFA00379183 /* Enum+Ex.swift in Sources */,
 				E0443BBD1E8FA4FD003457DF /* UIViewController+Ex.swift in Sources */,
 				E0443BB91E8FA356003457DF /* UIBarButtonItem+Ex.swift in Sources */,
+				E05A38BC1E924093002A259A /* Bool+Ex.swift in Sources */,
 				E0443BAB1E8FA0BE003457DF /* NSObject+Ex.swift in Sources */,
+				E023CBBC1E964A4000F91145 /* Operators.swift in Sources */,
 				E0443BB71E8FA320003457DF /* String+Ex.swift in Sources */,
 				E0443BB31E8FA0D6003457DF /* UITableView+Ex.swift in Sources */,
 				E0443BBB1E8FA46F003457DF /* Array+Ex.swift in Sources */,
+				E023CBBA1E96483100F91145 /* SFSafariViewController+Rx.swift in Sources */,
+				E023CBAF1E963AC400F91145 /* ObservableType+Ex.swift in Sources */,
+				E023CBB11E963E3700F91145 /* AnyOptional.swift in Sources */,
 				E0443BB01E8FA0D6003457DF /* UICollectionView+Ex.swift in Sources */,
+				E023CBBE1E964CE300F91145 /* URL+Ex.swift in Sources */,
 				E0443BB21E8FA0D6003457DF /* UIImageView+Ex.swift in Sources */,
 				E0443BB51E8FA254003457DF /* UIView+Ex.swift in Sources */,
 				E0443BBF1E8FA546003457DF /* Dictionary+Ex.swift in Sources */,
+				E023CBB81E963EEB00F91145 /* SFSafariViewController+Ex.swift in Sources */,
+				E023CBAA1E963A3000F91145 /* NSObject+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +478,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Asuha/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -415,6 +503,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Asuha/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -430,6 +522,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K677BRB35L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AsuhaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bangohan.AsuhaTests;
@@ -443,6 +539,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K677BRB35L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AsuhaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bangohan.AsuhaTests;

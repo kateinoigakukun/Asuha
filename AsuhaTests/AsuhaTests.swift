@@ -25,6 +25,16 @@ class AsuhaTests: XCTestCase {
         XCTAssertEqual(UITableView.className, "UITableView")
         XCTAssertEqual(UITableView.className, UITableView().className)
     }
+
+    func testQueryItem() {
+        let url = URL(string: "https://example.com?q=query&page=1")!
+        XCTAssertEqual(url.queryItem["q"], "query")
+        XCTAssertEqual(url.queryItem["page"], "1")
+    }
+
+    func testDownload() {
+
+    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

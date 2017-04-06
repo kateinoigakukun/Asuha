@@ -10,7 +10,7 @@ import Foundation
 
 protocol EnumExtension {}
 
-struct EnumIterator<E: Hashable>: IteratorProtocol {
+private struct EnumIterator<E: Hashable>: IteratorProtocol {
     var hash: Int
 
     init(type: E.Type) {
