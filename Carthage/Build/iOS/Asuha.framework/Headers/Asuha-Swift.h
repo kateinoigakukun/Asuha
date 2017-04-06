@@ -117,6 +117,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import ObjectiveC;
 @import SafariServices;
+@import Foundation;
 @import UIKit;
 #endif
 
@@ -128,10 +129,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 @interface NSObject (SWIFT_EXTENSION(Asuha))
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull className;)
++ (NSString * _Nonnull)className;
+@property (nonatomic, readonly, copy) NSString * _Nonnull className;
 @end
 
 
 @interface SFSafariViewController (SWIFT_EXTENSION(Asuha))
++ (void)open:(NSURL * _Nonnull)url;
 @end
 
 
