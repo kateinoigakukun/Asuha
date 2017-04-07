@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UIImageView {
-    func circlize() {
+public extension UIImageView {
+    public func circlize() {
         layer.cornerRadius = frame.width/2
         layer.masksToBounds = true
         contentMode = .scaleAspectFill

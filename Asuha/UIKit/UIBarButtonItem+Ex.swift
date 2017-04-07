@@ -8,16 +8,16 @@
 
 import UIKit
 
-extension UINavigationItem {
+public extension UINavigationItem {
 
-    func addRightItem(barButtonItem: UIBarButtonItem) -> UIBarButtonItem {
+    public func addRightItem(barButtonItem: UIBarButtonItem) -> UIBarButtonItem {
         var items = rightBarButtonItems ?? []
         items.append(barButtonItem)
         setRightBarButtonItems(items, animated: true)
 
         return barButtonItem
     }
-    func addLeftItem(barButtonItem: UIBarButtonItem) -> UIBarButtonItem {
+    public func addLeftItem(barButtonItem: UIBarButtonItem) -> UIBarButtonItem {
         var items = leftBarButtonItems ?? []
         items.append(barButtonItem)
         setLeftBarButtonItems(items, animated: true)
@@ -25,21 +25,21 @@ extension UINavigationItem {
         return barButtonItem
     }
 
-    func addRightItem(barButtonSystemItem: UIBarButtonSystemItem) -> UIBarButtonItem {
+    public func addRightItem(barButtonSystemItem: UIBarButtonSystemItem) -> UIBarButtonItem {
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: barButtonSystemItem, target: nil, action: nil)
         return addRightItem(barButtonItem: barButtonItem)
     }
-    func addLeftItem(barButtonSystemItem: UIBarButtonSystemItem) -> UIBarButtonItem {
+    public func addLeftItem(barButtonSystemItem: UIBarButtonSystemItem) -> UIBarButtonItem {
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: barButtonSystemItem, target: nil, action: nil)
         return addLeftItem(barButtonItem: barButtonItem)
     }
 
 
-    func addRightItem(title: String, style: UIBarButtonItemStyle = .plain) -> UIBarButtonItem {
+    public func addRightItem(title: String, style: UIBarButtonItemStyle = .plain) -> UIBarButtonItem {
         let barButtonItem = UIBarButtonItem(title: title, style: style, target: nil, action: nil)
         return addRightItem(barButtonItem: barButtonItem)
     }
-    func addLeftItem(title: String, style: UIBarButtonItemStyle = .plain) -> UIBarButtonItem {
+    public func addLeftItem(title: String, style: UIBarButtonItemStyle = .plain) -> UIBarButtonItem {
         let barButtonItem = UIBarButtonItem(title: title, style: style, target: nil, action: nil)
         return addLeftItem(barButtonItem: barButtonItem)
     }
