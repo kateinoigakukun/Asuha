@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UINavigationItem {
-
+    @discardableResult
     public func addRightItem(barButtonItem: UIBarButtonItem) -> UIBarButtonItem {
         var items = rightBarButtonItems ?? []
         items.append(barButtonItem)
@@ -17,6 +17,7 @@ public extension UINavigationItem {
 
         return barButtonItem
     }
+    @discardableResult
     public func addLeftItem(barButtonItem: UIBarButtonItem) -> UIBarButtonItem {
         var items = leftBarButtonItems ?? []
         items.append(barButtonItem)
