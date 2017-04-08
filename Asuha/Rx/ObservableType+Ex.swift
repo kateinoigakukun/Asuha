@@ -16,13 +16,38 @@ public extension ObservableType {
 }
 
 public extension ObservableType where E: AnyOptional {
-
+    
     public func filterNil() -> Observable<E.Wrapped> {
         return self.flatMap { element -> Observable<E.Wrapped> in
             guard let value = element.value else {
                 return Observable<E.Wrapped>.empty()
             }
             return Observable<E.Wrapped>.just(value)
+        }
+    }
+}
+
+public protocol AnyArray {
+    var isEmpty: Bool { get }
+}
+extension Array: AnyArray {}
+
+public extension ObservableType where E: AnyArray {
+    public func filterEmpty() -> Observable<E> {
+        return self.flatMap { element -> Observable<E> in
+            guard element.isEmpty.negated else {
+                return Observable<E>.empty()
+            }
+            return Observable<E>.just(element)
+        }
+    }
+}
+
+public extension ObservableType where E: AnyOptional, E.Wrapped: Equatable {
+
+    public func distinctUntilChanged() -> Observable<E> {
+        return self.distinctUntilChanged { (lhs, rhs) -> Bool in
+            return lhs.value == rhs.value
         }
     }
 }
