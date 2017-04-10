@@ -24,6 +24,17 @@ public extension UIView {
             self.addSubview(view)
         }
     }
+
+    public func removeFromSuperview(animated: Bool, withDuration duration: TimeInterval, options: UIViewAnimationOptions = .curveEaseIn) {
+        
+        if !animated { self.removeFromSuperview() }
+        UIView.animate(withDuration: duration, delay: 0.0, options: options,
+                       animations: { [unowned self] in
+                        self.alpha = 0.0
+            }, completion: { [unowned self] _ in
+                self.removeFromSuperview()
+        })
+    }
 }
 
 public protocol NibHelper {}
