@@ -36,3 +36,10 @@ public extension Array where Element: Equatable {
         append(contentsOf: contents)
     }
 }
+
+public protocol AnyArray {
+    associatedtype Element
+    var isEmpty: Bool { get }
+    mutating func append(_ newElement: Element)
+}
+extension Array: AnyArray {}

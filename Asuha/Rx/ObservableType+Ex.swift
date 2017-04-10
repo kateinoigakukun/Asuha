@@ -27,11 +27,6 @@ public extension ObservableType where E: AnyOptional {
     }
 }
 
-public protocol AnyArray {
-    var isEmpty: Bool { get }
-}
-extension Array: AnyArray {}
-
 public extension ObservableType where E: AnyArray {
     public func filterEmpty() -> Observable<E> {
         return self.flatMap { element -> Observable<E> in
