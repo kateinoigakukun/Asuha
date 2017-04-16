@@ -34,3 +34,9 @@ public extension EnumExtension where Self: Hashable {
         return Array(IteratorSequence(EnumIterator(type: Self.self)))
     }
 }
+
+extension EnumExtension {
+    var string: String {
+        return String(describing: self)
+    }
+}
