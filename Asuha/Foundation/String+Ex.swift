@@ -15,6 +15,9 @@ public extension String {
         }()
         return self.range(of: find, options: option) != nil
     }
+    var length: Int {
+        return (self as NSString).length
+    }
 }
 
 public extension String {

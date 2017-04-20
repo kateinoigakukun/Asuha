@@ -16,7 +16,10 @@ public extension URL {
         var params: [String:String] = [:]
         splitedQuery?.forEach{ item in
             let item = item.components(separatedBy: CharacterSet(charactersIn: "="))
-            params[item[0]] = item[1]
+            print(item)
+            guard let key = item[safe: 0],
+                let value = item[safe: 1] else { return }
+            params[key] = value
         }
         return params
     }
