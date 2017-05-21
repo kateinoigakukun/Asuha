@@ -30,13 +30,25 @@ private struct EnumIterator<E: Hashable>: IteratorProtocol {
 }
 
 public extension EnumExtension where Self: Hashable {
-    static var all: [Self] {
+    public static var all: [Self] {
         return Array(IteratorSequence(EnumIterator(type: Self.self)))
+    }
+
+    public static func create(hashValue: Int) -> Self? {
+        var hash = hashValue
+
+        let element = withUnsafePointer(to: &hash) { UnsafeRawPointer($0) }.load(as: Self.self)
+
+        guard element.hashValue == hashValue else {
+            return nil
+        }
+
+        return element
     }
 }
 
-extension EnumExtension {
-    var string: String {
+public extension EnumExtension {
+    public var string: String {
         return String(describing: self)
     }
 }

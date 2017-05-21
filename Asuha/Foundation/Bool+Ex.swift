@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Bool {
-    var negated: Bool {
+    public var negated: Bool {
         return !self
     }
 }
