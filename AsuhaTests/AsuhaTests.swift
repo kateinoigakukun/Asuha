@@ -35,6 +35,22 @@ class AsuhaTests: XCTestCase {
     func testDownload() {
 
     }
+
+    func testForEach_vs_for() {
+        measure {
+            let a = [1,4,1,4,6]
+            a.forEach { i in
+                print(i)
+            }
+        }
+
+        measure {
+            let a = [1,4,1,4,6]
+            for i in a {
+                print(i)
+            }
+        }
+    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

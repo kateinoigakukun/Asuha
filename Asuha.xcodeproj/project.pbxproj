@@ -16,7 +16,6 @@
 		E023CBBA1E96483100F91145 /* SFSafariViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBB91E96483100F91145 /* SFSafariViewController+Rx.swift */; };
 		E023CBBC1E964A4000F91145 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBBB1E964A4000F91145 /* Operators.swift */; };
 		E023CBBE1E964CE300F91145 /* URL+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBBD1E964CE300F91145 /* URL+Ex.swift */; };
-		E023CBC11E964E4D00F91145 /* RxCocoa.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
 		E023CBC21E964E4D00F91145 /* RxSwift.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA41E9639DB00F91145 /* RxSwift.framework */; };
 		E023CBC31E964E5C00F91145 /* RxCocoa.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
 		E023CBC41E964E5C00F91145 /* RxSwift.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA41E9639DB00F91145 /* RxSwift.framework */; };
@@ -38,6 +37,7 @@
 		E0443BBF1E8FA546003457DF /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BBE1E8FA546003457DF /* Dictionary+Ex.swift */; };
 		E05A38BC1E924093002A259A /* Bool+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05A38BB1E924093002A259A /* Bool+Ex.swift */; };
 		E082B0911E90EFFA00379183 /* Enum+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E082B0901E90EFFA00379183 /* Enum+Ex.swift */; };
+		E09329341ED9713300F2EEB5 /* RxCocoa.framework in Sources */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
 		E0CBBA681ECFB43200EA6108 /* AnyObserver+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA611ECFB43200EA6108 /* AnyObserver+Ex.swift */; };
 		E0CBBA691ECFB43200EA6108 /* Driver+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA621ECFB43200EA6108 /* Driver+Ex.swift */; };
 		E0CBBA6A1ECFB43200EA6108 /* PHImageManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA631ECFB43200EA6108 /* PHImageManager+Rx.swift */; };
@@ -342,7 +342,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E023CBC11E964E4D00F91145 /* RxCocoa.framework in Resources */,
 				E023CBC21E964E4D00F91145 /* RxSwift.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09329341ED9713300F2EEB5 /* RxCocoa.framework in Sources */,
 				E0443B931E8F9EDE003457DF /* AsuhaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -44,6 +44,12 @@ public extension NibHelper where Self: UIView {
         let nib = UINib(nibName: self.className, bundle: nil)
         return nib.instantiate(withOwner: nil, options: nil).first as! Self
     }
+
+    init(fromNib: Void) {
+        self = Self.instantiate()
+    }
 }
 
 extension UIView: NibHelper {}
+
+let v = UIView(fromNib: ())
