@@ -45,6 +45,11 @@ public extension EnumExtension where Self: Hashable {
 
         return element
     }
+
+    init?(hashValue: Int) {
+        guard let element = Self.create(hashValue: hashValue) else { return nil }
+        self = element
+    }
 }
 
 public extension EnumExtension {
