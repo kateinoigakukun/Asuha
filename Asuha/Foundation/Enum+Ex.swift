@@ -10,7 +10,7 @@ import Foundation
 
 public protocol EnumExtension {}
 
-private struct EnumIterator<E: Hashable>: IteratorProtocol {
+private struct EnumIterator<E: Hashable & EnumExtension>: IteratorProtocol {
     var hash: Int
 
     init(type: E.Type) {
@@ -19,13 +19,7 @@ private struct EnumIterator<E: Hashable>: IteratorProtocol {
 
     mutating func next() -> E? {
         defer { hash += 1 }
-        var n = hash
-        let ptr = withUnsafePointer(to: &n) { UnsafeRawPointer($0) }
-            .bindMemory(to: E.self, capacity: MemoryLayout<E>.size)
-        guard ptr.pointee.hashValue == n else {
-            return nil
-        }
-        return ptr.pointee
+        return E.create(hashValue: hash)
     }
 }
 

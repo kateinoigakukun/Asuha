@@ -10,7 +10,7 @@ import RxSwift
 import UIKit
 
 public extension Reactive where Base: UIScrollView {
-    var contentOffSet: Observable<CGPoint> {
+    public var contentOffSet: Observable<CGPoint> {
         return observe(CGPoint.self, "contentOffset").filterNil()
     }
 }

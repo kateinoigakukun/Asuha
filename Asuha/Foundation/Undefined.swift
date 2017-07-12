@@ -8,6 +8,6 @@
 
 import Foundation
 
-func undefined<T>(_ funcName: String=#function) -> T {
+public func undefined<T>(_ funcName: String=#function) -> T {
     fatalError("\(funcName) is undefined.")
 }

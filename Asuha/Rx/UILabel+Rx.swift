@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 extension Reactive where Base: UILabel {
-    var textColor: UIBindingObserver<Base, UIColor> {
+    public var textColor: UIBindingObserver<Base, UIColor> {
         return UIBindingObserver(UIElement: self.base) { label, color in
             label.textColor = color
         }

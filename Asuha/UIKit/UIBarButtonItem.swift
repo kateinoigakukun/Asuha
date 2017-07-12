@@ -10,7 +10,7 @@ import UIKit
 
 extension UIBarButtonItem {
 
-    var privateView: UIView {
+    public var privateView: UIView {
         return value(forKey: "view") as! UIView
     }
 }

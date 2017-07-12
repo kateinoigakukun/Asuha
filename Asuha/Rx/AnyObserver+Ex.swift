@@ -9,7 +9,7 @@
 import RxSwift
 
 extension AnyObserver {
-    init(nextEventHandler: @escaping (Element) -> Void) {
+    public init(nextEventHandler: @escaping (Element) -> Void) {
         self.init(eventHandler: { event in
             guard case let .next(element) = event else {
                 return

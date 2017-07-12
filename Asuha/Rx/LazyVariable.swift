@@ -9,12 +9,12 @@
 import Foundation
 import RxSwift
 
-class LazyVariable<Element>: ObservableType, SubjectType, ObserverType, Disposable {
+public class LazyVariable<Element>: ObservableType, SubjectType, ObserverType, Disposable {
 
-    typealias SubjectObserverType = ReplaySubject<Element>
-    typealias E = Element
+    public typealias SubjectObserverType = ReplaySubject<Element>
+    public typealias E = Element
 
-    var value: Element {
+    public var value: Element {
         get {
             return _value ?? undefined()
         }
@@ -27,21 +27,21 @@ class LazyVariable<Element>: ObservableType, SubjectType, ObserverType, Disposab
     private var replaySubject = ReplaySubject<Element>.create(bufferSize: 1)
     private var _value: Element?
 
-    func on(_ event: Event<Element>) {
+    public func on(_ event: Event<Element>) {
         replaySubject.on(event)
         guard case let .next(element) = event else { return }
         _value = element
     }
 
-    func subscribe<O>(_ observer: O) -> Disposable where O : ObserverType, O.E == Element {
+    public func subscribe<O>(_ observer: O) -> Disposable where O : ObserverType, O.E == Element {
         return replaySubject.subscribe(observer)
     }
 
-    func dispose() {
+    public func dispose() {
         replaySubject.dispose()
     }
 
-    func asObserver() -> ReplaySubject<Element> {
+    public func asObserver() -> ReplaySubject<Element> {
         return replaySubject
     }
 }

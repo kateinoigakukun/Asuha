@@ -9,7 +9,7 @@
 import RxSwift
 
 extension Variable where Element: AnyArray {
-    func asAppendable() -> AnyObserver<Element.Element> {
+    public func asAppendable() -> AnyObserver<Element.Element> {
         return AnyObserver(nextEventHandler: { (element) in
             self.value.append(element)
         })

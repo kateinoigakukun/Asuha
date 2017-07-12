@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIApplication {
-    var rootViewController: UIViewController? {
+    public var rootViewController: UIViewController? {
         return self.keyWindow?.rootViewController
     }
 }

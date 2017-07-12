@@ -15,7 +15,7 @@ public extension UICollectionView {
         register(nib, forCellWithReuseIdentifier: className)
     }
 
-    public func dequeueReusableCell<T: UICollectionViewCell>(with type: T.Type, for indexPath: IndexPath) -> T {
+    public func dequeueReusableCell<T: UICollectionViewCell>(with type: T.Type = T.self, for indexPath: IndexPath) -> T {
         return self.dequeueReusableCell(withReuseIdentifier: type.className, for: indexPath) as! T
     }
 }
