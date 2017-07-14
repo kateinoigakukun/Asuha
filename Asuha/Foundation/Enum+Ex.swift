@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol EnumExtension {}
+public protocol EnumExtension: Equatable {}
 
 private struct EnumIterator<E: Hashable & EnumExtension>: IteratorProtocol {
     var hash: Int
@@ -43,6 +43,12 @@ public extension EnumExtension where Self: Hashable {
     init?(hashValue: Int) {
         guard let element = Self.create(hashValue: hashValue) else { return nil }
         self = element
+    }
+}
+
+public extension EnumExtension where Self: Hashable {
+    static func ==(lhs: Self, rhs: Self) -> Bool {
+        return lhs.hashValue == rhs.hashValue
     }
 }
 
