@@ -8,38 +8,55 @@
 
 import Foundation
 
-public extension Array {
-    public subscript (safe index: Int) -> Element? {
+public protocol AnyArray {
+    associatedtype Element
+    var isEmpty: Bool { get }
+    var indices: CountableRange<Int> { get }
+
+    subscript(index: Int) -> Element { get set }
+    mutating func append(_ newElement: Element)
+    mutating func append<S>(contentsOf newElements: S) where S : Sequence, S.Iterator.Element == Element
+    func contains(where predicate: (Element) throws -> Bool) rethrows -> Bool
+}
+
+extension AnyArray where Element: Equatable {
+    func contains(_ element: Element) -> Bool {
+        return contains(where: { return $0 == element })
+    }
+}
+
+extension Array: AnyArray {}
+extension Array: AsuhaCompatible {}
+
+public extension Asuha where Base: AnyArray {
+    public subscript (safe index: Int) -> Base.Element? {
         get {
-            return self.indices ~= index ? self[index] : nil
+            return base.indices ~= index ? base[index] : nil
         }
         set (value) {
             if value == nil {
                 return
             }
-            if !(self.indices ~= index) {
+            if !(base.indices ~= index) {
                 return
             }
-            self[index] = value!
+            base[index] = value!
         }
     }
 }
 
-public extension Array where Element: Equatable {
-    public mutating func appendUnique(element: Element) {
-        if contains(element) { return }
-        append(element)
+public extension Asuha where Base: AnyArray, Base.Element: Equatable {
+    public mutating func appendUnique(element: Base.Element) {
+
+        if base.contains(element) { return }
+        base.append(element)
+        var s = ["s"]
+        s.append(contentsOf: [""])
     }
 
-    public mutating func appendUnique(contentsOf: [Element]) {
-        let contents = contentsOf.filter { !self.contains($0) }
-        append(contentsOf: contents)
+    public mutating func appendUnique(contentsOf: [Base.Element]) {
+        let contents = contentsOf.filter { !base.contains($0) }
+        base.append(contentsOf: contents)
     }
 }
 
-public protocol AnyArray {
-    associatedtype Element
-    var isEmpty: Bool { get }
-    mutating func append(_ newElement: Element)
-}
-extension Array: AnyArray {}

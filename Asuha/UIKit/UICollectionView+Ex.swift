@@ -8,14 +8,14 @@
 
 import UIKit
 
-public extension UICollectionView {
+public extension Asuha where Base: UICollectionView {
     public func register<T: UICollectionViewCell>(cellType: T.Type) {
-        let className = cellType.className
+        let className = cellType.asuha.className
         let nib = UINib(nibName: className, bundle: nil)
-        register(nib, forCellWithReuseIdentifier: className)
+        base.register(nib, forCellWithReuseIdentifier: className)
     }
 
     public func dequeueReusableCell<T: UICollectionViewCell>(with type: T.Type = T.self, for indexPath: IndexPath) -> T {
-        return self.dequeueReusableCell(withReuseIdentifier: type.className, for: indexPath) as! T
+        return base.dequeueReusableCell(withReuseIdentifier: type.asuha.className, for: indexPath) as! T
     }
 }

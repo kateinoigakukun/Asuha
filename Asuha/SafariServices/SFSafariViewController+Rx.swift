@@ -15,7 +15,7 @@ public extension Reactive where Base: SFSafariViewController {
             guard case let .next(url) = event else {
                 return
             }
-            Base.open(url)
+            Base.asuha.open(url)
         })
     }
 }

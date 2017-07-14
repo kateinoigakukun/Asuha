@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UIApplication {
+extension Asuha where Base: UIApplication {
     public var rootViewController: UIViewController? {
-        return self.keyWindow?.rootViewController
+        return base.keyWindow?.rootViewController
     }
 }

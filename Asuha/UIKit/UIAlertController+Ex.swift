@@ -35,7 +35,7 @@ extension UIAlertController {
     }
 
     public func show() {
-        guard let viewController = UIApplication.shared.rootViewController else { return }
+        guard let viewController = UIApplication.shared.asuha.rootViewController else { return }
         viewController.present(self, animated: true, completion: nil)
     }
 }

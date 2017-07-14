@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIBarButtonItem {
+extension Asuha where Base: UIBarButtonItem {
 
     public var privateView: UIView {
-        return value(forKey: "view") as! UIView
+        return base.value(forKey: "view") as! UIView
     }
 }

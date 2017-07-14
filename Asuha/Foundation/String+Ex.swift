@@ -8,21 +8,22 @@
 
 import Foundation
 
-public extension String {
+extension String: AsuhaCompatible {}
+public extension Asuha where Base == String {
     public func contains(_ find: String, ignoreCase: Bool = true) -> Bool{
         let option: NSString.CompareOptions = {
             return ignoreCase ? .caseInsensitive : .literal
         }()
-        return self.range(of: find, options: option) != nil
+        return base.range(of: find, options: option) != nil
     }
     var length: Int {
-        return (self as NSString).length
+        return (base as NSString).length
     }
 }
 
-public extension String {
+public extension Asuha where Base == String {
     public func unescapeHTML() -> String {
-        var newStr = self
+        var newStr = base
         let char_dict = [
             "&amp;": "&",
             "&lt;": "<",
@@ -36,7 +37,7 @@ public extension String {
         return newStr
     }
     public func escapeHTML() -> String {
-        var newStr = self
+        var newStr = base
         let char_dict = [
             "&amp;": "&",
             "&lt;": "<",

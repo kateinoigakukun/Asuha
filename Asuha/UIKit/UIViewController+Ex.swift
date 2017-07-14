@@ -8,13 +8,9 @@
 
 import UIKit
 
-public protocol StoryBoardHelper {}
-
-public extension StoryBoardHelper where Self: UIViewController {
-    public static func instantiate(_ storyboard: String = Self.className) -> Self {
+extension Asuha where Base: UIViewController {
+    public static func instantiate(_ storyboard: String = className) -> Base {
         let storyboard = UIStoryboard(name: self.className, bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: self.className) as! Self
+        return storyboard.instantiateViewController(withIdentifier: self.className) as! Base
     }
 }
-
-extension UIViewController: StoryBoardHelper {}

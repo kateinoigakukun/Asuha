@@ -8,8 +8,9 @@
 
 import Foundation
 
-public extension Bool {
+extension Bool: AsuhaCompatible {}
+public extension Asuha where Base == Bool {
     public var negated: Bool {
-        return !self
+        return !base
     }
 }

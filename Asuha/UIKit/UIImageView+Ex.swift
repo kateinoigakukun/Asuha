@@ -8,10 +8,10 @@
 
 import UIKit
 
-public extension UIImageView {
+public extension Asuha where Base: UIImageView {
     public func circlize() {
-        layer.cornerRadius = frame.width/2
-        layer.masksToBounds = true
-        contentMode = .scaleAspectFill
+        base.layer.cornerRadius = base.frame.width/2
+        base.layer.masksToBounds = true
+        base.contentMode = .scaleAspectFill
     }
 }

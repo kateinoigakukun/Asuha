@@ -8,20 +8,20 @@
 
 import UIKit
 
-public extension UINavigationItem {
+public extension Asuha where Base: UINavigationItem {
     @discardableResult
     public func addRightItem(barButtonItem: UIBarButtonItem) -> UIBarButtonItem {
-        var items = rightBarButtonItems ?? []
+        var items = base.rightBarButtonItems ?? []
         items.append(barButtonItem)
-        setRightBarButtonItems(items, animated: true)
+        base.setRightBarButtonItems(items, animated: true)
 
         return barButtonItem
     }
     @discardableResult
     public func addLeftItem(barButtonItem: UIBarButtonItem) -> UIBarButtonItem {
-        var items = leftBarButtonItems ?? []
+        var items = base.leftBarButtonItems ?? []
         items.append(barButtonItem)
-        setLeftBarButtonItems(items, animated: true)
+        base.setLeftBarButtonItems(items, animated: true)
 
         return barButtonItem
     }

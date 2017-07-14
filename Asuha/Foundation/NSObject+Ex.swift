@@ -8,12 +8,12 @@
 
 import Foundation
 
-public extension NSObject {
-    public class var className: String {
-        return String(describing: self)
+public extension Asuha where Base: NSObject {
+    public static var className: String {
+        return String(describing: Base.self)
     }
 
     public var className: String {
-        return type(of: self).className
+        return type(of: base).asuha.className
     }
 }

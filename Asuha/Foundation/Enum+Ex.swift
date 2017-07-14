@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol EnumExtension: Equatable {}
+public protocol EnumExtension: Equatable, AsuhaCompatible {}
 
 private struct EnumIterator<E: Hashable & EnumExtension>: IteratorProtocol {
     var hash: Int
@@ -19,19 +19,19 @@ private struct EnumIterator<E: Hashable & EnumExtension>: IteratorProtocol {
 
     mutating func next() -> E? {
         defer { hash += 1 }
-        return E.create(hashValue: hash)
+        return E.asuha.create(hashValue: hash)
     }
 }
 
-public extension EnumExtension where Self: Hashable {
-    public static var all: [Self] {
-        return Array(IteratorSequence(EnumIterator(type: Self.self)))
+public extension Asuha where Base: EnumExtension, Base : Hashable {
+    public static var all: [Base] {
+        return Array(IteratorSequence(EnumIterator(type: Base.self)))
     }
 
-    public static func create(hashValue: Int) -> Self? {
+    public static func create(hashValue: Int) -> Base? {
         var hash = hashValue
 
-        let element = withUnsafePointer(to: &hash) { UnsafeRawPointer($0) }.load(as: Self.self)
+        let element = withUnsafePointer(to: &hash) { UnsafeRawPointer($0) }.load(as: Base.self)
 
         guard element.hashValue == hashValue else {
             return nil
@@ -40,20 +40,20 @@ public extension EnumExtension where Self: Hashable {
         return element
     }
 
-    init?(hashValue: Int) {
-        guard let element = Self.create(hashValue: hashValue) else { return nil }
-        self = element
+    public static func `init`(hashValue: Int) -> Base? {
+        guard let element = Base.asuha.create(hashValue: hashValue) else { return nil }
+        return element
     }
 }
 
 public extension EnumExtension where Self: Hashable {
-    static func ==(lhs: Self, rhs: Self) -> Bool {
+    public static func ==(lhs: Self, rhs: Self) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }
 }
 
-public extension EnumExtension {
+public extension Asuha where Base: EnumExtension {
     public var string: String {
-        return String(describing: self)
+        return String(describing: base)
     }
 }

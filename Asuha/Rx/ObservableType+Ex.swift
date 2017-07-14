@@ -30,7 +30,7 @@ public extension ObservableType where E: AnyOptional {
 public extension ObservableType where E: AnyArray {
     public func filterEmpty() -> Observable<E> {
         return self.flatMap { element -> Observable<E> in
-            guard element.isEmpty.negated else {
+            guard element.isEmpty.asuha.negated else {
                 return Observable<E>.empty()
             }
             return Observable<E>.just(element)

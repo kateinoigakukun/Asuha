@@ -50,6 +50,8 @@
 		E0CBBA741ECFB44000EA6108 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA711ECFB44000EA6108 /* UIBarButtonItem.swift */; };
 		E0CBBA761ECFB45000EA6108 /* LazyVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA751ECFB45000EA6108 /* LazyVariable.swift */; };
 		E0CBBA781ECFBAAA00EA6108 /* Undefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA771ECFBAAA00EA6108 /* Undefined.swift */; };
+		E0F768A41F18580D00993490 /* Asuha.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F768A31F18580D00993490 /* Asuha.swift */; };
+		E0F768A61F18586900993490 /* Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F768A51F18586900993490 /* Require.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		E0CBBA711ECFB44000EA6108 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 		E0CBBA751ECFB45000EA6108 /* LazyVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyVariable.swift; sourceTree = "<group>"; };
 		E0CBBA771ECFBAAA00EA6108 /* Undefined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Undefined.swift; sourceTree = "<group>"; };
+		E0F768A31F18580D00993490 /* Asuha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asuha.swift; sourceTree = "<group>"; };
+		E0F768A51F18586900993490 /* Require.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				E0443B871E8F9EDE003457DF /* Asuha.h */,
+				E0F768A31F18580D00993490 /* Asuha.swift */,
 				E023CBB61E963EB900F91145 /* SafariServices */,
 				E023CBA81E9639E800F91145 /* Rx */,
 				E0443BA31E8F9FC1003457DF /* Foundation */,
@@ -242,6 +247,7 @@
 				E023CBBB1E964A4000F91145 /* Operators.swift */,
 				E023CBBD1E964CE300F91145 /* URL+Ex.swift */,
 				E0CBBA771ECFBAAA00EA6108 /* Undefined.swift */,
+				E0F768A51F18586900993490 /* Require.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 				E0443BB11E8FA0D6003457DF /* UIColor+Ex.swift in Sources */,
 				E082B0911E90EFFA00379183 /* Enum+Ex.swift in Sources */,
 				E0CBBA6A1ECFB43200EA6108 /* PHImageManager+Rx.swift in Sources */,
+				E0F768A61F18586900993490 /* Require.swift in Sources */,
 				E0443BBD1E8FA4FD003457DF /* UIViewController+Ex.swift in Sources */,
 				E0CBBA6C1ECFB43200EA6108 /* UIScrollView+Rx.swift in Sources */,
 				E0443BB91E8FA356003457DF /* UIBarButtonItem+Ex.swift in Sources */,
@@ -384,6 +391,7 @@
 				E0443BBB1E8FA46F003457DF /* Array+Ex.swift in Sources */,
 				E023CBBA1E96483100F91145 /* SFSafariViewController+Rx.swift in Sources */,
 				E023CBAF1E963AC400F91145 /* ObservableType+Ex.swift in Sources */,
+				E0F768A41F18580D00993490 /* Asuha.swift in Sources */,
 				E0CBBA731ECFB44000EA6108 /* UIApplication+Ex.swift in Sources */,
 				E023CBB11E963E3700F91145 /* AnyOptional.swift in Sources */,
 				E0443BB01E8FA0D6003457DF /* UICollectionView+Ex.swift in Sources */,

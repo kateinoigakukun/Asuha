@@ -8,8 +8,17 @@
 
 import Foundation
 
-public extension Dictionary where Value : Equatable {
-    public func allKeysFor(_ value : Value) -> [Key] {
-        return self.filter { $1 == value }.map { $0.0 }
+public protocol AnyDictionary {
+    associatedtype Key: Hashable
+    associatedtype Value
+    func filter(_ isIncluded: ((key: Key, value: Value)) throws -> Bool) rethrows -> [(key: Key, value: Value)]
+}
+
+extension Dictionary: AnyDictionary {}
+extension Dictionary: AsuhaCompatible {}
+
+public extension Asuha where Base: AnyDictionary, Base.Value: Equatable {
+    public func allKeysFor(_ value : Base.Value) -> [Base.Key] {
+        return base.filter { $1 == value }.map { $0.0 }
     }
 }

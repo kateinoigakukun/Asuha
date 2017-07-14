@@ -8,8 +8,8 @@
 
 import UIKit
 
-public extension UIColor {
-    public class func hexStr ( _ hexStr : String, alpha : CGFloat = 1.0) -> UIColor {
+public extension Asuha where Base: UIColor {
+    public static func hexStr ( _ hexStr : String, alpha : CGFloat = 1.0) -> UIColor {
         let hexStr = hexStr.replacingOccurrences(of: "#", with: "")
         let scanner = Scanner(string: hexStr)
         var color: UInt32 = 0

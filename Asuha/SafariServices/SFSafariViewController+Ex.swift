@@ -9,7 +9,7 @@
 import SafariServices
 import UIKit
 
-public extension SFSafariViewController {
+public extension Asuha where Base: SFSafariViewController {
     public static func open(_ url: URL) {
         guard let window = UIApplication.shared.delegate?.window,
             let rootVC = window?.rootViewController else {
