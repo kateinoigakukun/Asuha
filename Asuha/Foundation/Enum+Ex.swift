@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol EnumExtension: Equatable, AsuhaCompatible {}
+public protocol EnumExtension: AsuhaCompatible {}
 
 private struct EnumIterator<E: Hashable & EnumExtension>: IteratorProtocol {
     var hash: Int
