@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol AnyOptional {
+public protocol AnyOptional: AsuhaCompatible {
     associatedtype Wrapped
     var value: Wrapped? { get }
 }
@@ -16,5 +16,15 @@ public protocol AnyOptional {
 extension Optional: AnyOptional {
     public var value: Wrapped? {
         return self
+    }
+}
+
+extension Asuha where Base: AnyOptional {
+    public var isNil: Bool {
+        return base.value == nil
+    }
+
+    public var isNotNil: Bool {
+        return !isNil
     }
 }

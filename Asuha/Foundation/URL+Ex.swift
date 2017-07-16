@@ -16,7 +16,6 @@ public extension URL {
         var params: [String:String] = [:]
         splitedQuery?.forEach{ item in
             let item = item.components(separatedBy: CharacterSet(charactersIn: "="))
-            print(item)
             guard let key = item.asuha[safe: 0],
                 let value = item.asuha[safe: 1] else { return }
             params[key] = value
