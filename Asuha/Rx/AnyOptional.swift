@@ -18,3 +18,13 @@ extension Optional: AnyOptional {
         return self
     }
 }
+
+extension Optional {
+    var isNil: Bool {
+        return self == nil
+    }
+
+    var isNotNil: Bool {
+        return !isNil
+    }
+}
