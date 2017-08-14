@@ -46,4 +46,8 @@ public class LazyVariable<Element>: ObservableType, SubjectType, ObserverType, O
     public func asObserver() -> ReplaySubject<Element> {
         return replaySubject
     }
+
+    deinit {
+        replaySubject.onCompleted()
+    }
 }

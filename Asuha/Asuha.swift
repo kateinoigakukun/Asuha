@@ -27,11 +27,17 @@ public protocol AsuhaCompatible {
 extension AsuhaCompatible {
 
     public static var asuha: Asuha<Self>.Type {
-        return Asuha<Self>.self
+        get {
+            return Asuha<Self>.self
+        }
+        set {}
     }
 
     public var asuha: Asuha<Self> {
-        return Asuha(self)
+        get {
+            return Asuha(self)
+        }
+        set {}
     }
 }
 
