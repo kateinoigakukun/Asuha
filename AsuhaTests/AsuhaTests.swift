@@ -22,8 +22,9 @@ class AsuhaTests: XCTestCase {
     }
     
     func testClassName() {
-        XCTAssertEqual(UITableView.className, "UITableView")
-        XCTAssertEqual(UITableView.className, UITableView().className)
+        let hoge = UIView().asuha.then {
+            $0.isHidden = true
+        }
     }
 
     func testQueryItem() {

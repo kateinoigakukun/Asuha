@@ -38,7 +38,7 @@ public extension Asuha where Base: UIView {
 }
 
 extension Asuha where Base: UIView {
-    static func instantiate() -> Base {
+    public static func instantiate() -> Base {
         let nib = UINib(nibName: className, bundle: nil)
         return nib.instantiate(withOwner: nil, options: nil).first as! Base
     }
