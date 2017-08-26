@@ -9,6 +9,7 @@
 import UIKit
 
 public extension Asuha where Base: UITableView {
+
     // MARK: - UITableViewCell
 
     public func register<T: UITableViewCell>(forClass type: T.Type) {
@@ -30,7 +31,7 @@ public extension Asuha where Base: UITableView {
         types.forEach { register(forNib: $0) }
     }
 
-    public func dequeueReusableCell<T: UITableViewCell>(with type: T.Type = T.self, for indexPath: IndexPath) -> T {
+    public func dequeueReusableCell<T: UITableViewCell>(with type: T.Type, for indexPath: IndexPath) -> T {
         return base.dequeueReusableCell(withIdentifier: type.asuha.className, for: indexPath) as! T
     }
 
@@ -56,7 +57,7 @@ public extension Asuha where Base: UITableView {
         types.forEach { register(forNib: $0) }
     }
 
-    public func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(with type: T.Type = T.self) -> T {
+    public func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(with type: T.Type) -> T {
         return base.dequeueReusableHeaderFooterView(withIdentifier: type.asuha.className) as! T
     }
 }

@@ -9,8 +9,9 @@
 import UIKit
 
 extension Asuha where Base: UIViewController {
-    public static func instantiate(_ storyboard: String = className) -> Base {
-        let storyboard = UIStoryboard(name: self.className, bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: self.className) as! Base
+    public static func instantiate(storyboardName: String = className) -> Base {
+        let storyboard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() ?? storyboard.instantiateViewController(withIdentifier: storyboardName)
+        return vc as! Base
     }
 }
