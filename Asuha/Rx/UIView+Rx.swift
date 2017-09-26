@@ -11,8 +11,8 @@ import RxCocoa
 import UIKit
 
 extension Reactive where Base: UIView {
-    public var backgroundColor: UIBindingObserver<Base, UIColor> {
-        return UIBindingObserver(UIElement: self.base) { view, backgroundColor in
+    public var backgroundColor: Binder<UIColor> {
+        return Binder(base) { view, backgroundColor in
             view.backgroundColor = backgroundColor
         }
     }

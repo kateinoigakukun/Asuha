@@ -11,7 +11,8 @@ import Foundation
 public protocol AnyDictionary {
     associatedtype Key: Hashable
     associatedtype Value
-    func filter(_ isIncluded: ((key: Key, value: Value)) throws -> Bool) rethrows -> [(key: Key, value: Value)]
+    typealias Element = (key: Key, value: Value)
+    func filter(_ isIncluded: (Element) throws -> Bool) rethrows -> [Key : Value]
 }
 
 extension Dictionary: AnyDictionary {}
