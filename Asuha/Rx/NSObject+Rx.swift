@@ -9,21 +9,24 @@
 import Foundation
 import RxSwift
 
-public extension NSObject {
-    struct AssociatedKeys {
-        static var disposeBagKey = "DisposeBagKey"
-    }
-    public var disposeBag: DisposeBag {
+private var disposeBagKey = 0
+public extension Reactive where Base: NSObject {
+
+    public var bag: DisposeBag {
         get {
-            guard let bag = objc_getAssociatedObject(self, &type(of: self).AssociatedKeys.disposeBagKey) as? DisposeBag else {
+            guard let bag = objc_getAssociatedObject(self, &disposeBagKey) as? DisposeBag else {
                 let newDisposeBag = DisposeBag()
-                self.disposeBag = newDisposeBag
+                setDisposeBag(with: newDisposeBag)
                 return newDisposeBag
             }
             return bag
         }
         set {
-            objc_setAssociatedObject(self, &type(of: self).AssociatedKeys.disposeBagKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            setDisposeBag(with: newValue)
         }
+    }
+
+    private func setDisposeBag(with bag: DisposeBag) {
+        objc_setAssociatedObject(self, &disposeBagKey, bag, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
 }

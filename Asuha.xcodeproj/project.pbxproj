@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E00086C91F428C1800F2AFD0 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00086C81F428C1800F2AFD0 /* Then.swift */; };
 		E023CBA61E9639DB00F91145 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
 		E023CBA71E9639DB00F91145 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E023CBA41E9639DB00F91145 /* RxSwift.framework */; };
 		E023CBAA1E963A3000F91145 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBA91E963A3000F91145 /* NSObject+Rx.swift */; };
 		E023CBAF1E963AC400F91145 /* ObservableType+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBAE1E963AC400F91145 /* ObservableType+Ex.swift */; };
-		E023CBB11E963E3700F91145 /* AnyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBB01E963E3700F91145 /* AnyOptional.swift */; };
 		E023CBB81E963EEB00F91145 /* SFSafariViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBB71E963EEB00F91145 /* SFSafariViewController+Ex.swift */; };
 		E023CBBA1E96483100F91145 /* SFSafariViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBB91E96483100F91145 /* SFSafariViewController+Rx.swift */; };
-		E023CBBC1E964A4000F91145 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBBB1E964A4000F91145 /* Operators.swift */; };
 		E023CBBE1E964CE300F91145 /* URL+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023CBBD1E964CE300F91145 /* URL+Ex.swift */; };
 		E023CBC31E964E5C00F91145 /* RxCocoa.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
 		E023CBC41E964E5C00F91145 /* RxSwift.framework in Resources */ = {isa = PBXBuildFile; fileRef = E023CBA41E9639DB00F91145 /* RxSwift.framework */; };
@@ -30,13 +27,8 @@
 		E0443BB21E8FA0D6003457DF /* UIImageView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BAE1E8FA0D6003457DF /* UIImageView+Ex.swift */; };
 		E0443BB31E8FA0D6003457DF /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BAF1E8FA0D6003457DF /* UITableView+Ex.swift */; };
 		E0443BB51E8FA254003457DF /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BB41E8FA254003457DF /* UIView+Ex.swift */; };
-		E0443BB71E8FA320003457DF /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BB61E8FA320003457DF /* String+Ex.swift */; };
 		E0443BB91E8FA356003457DF /* UIBarButtonItem+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BB81E8FA356003457DF /* UIBarButtonItem+Ex.swift */; };
-		E0443BBB1E8FA46F003457DF /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BBA1E8FA46F003457DF /* Array+Ex.swift */; };
 		E0443BBD1E8FA4FD003457DF /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BBC1E8FA4FD003457DF /* UIViewController+Ex.swift */; };
-		E0443BBF1E8FA546003457DF /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0443BBE1E8FA546003457DF /* Dictionary+Ex.swift */; };
-		E05A38BC1E924093002A259A /* Bool+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05A38BB1E924093002A259A /* Bool+Ex.swift */; };
-		E082B0911E90EFFA00379183 /* Enum+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E082B0901E90EFFA00379183 /* Enum+Ex.swift */; };
 		E09329341ED9713300F2EEB5 /* RxCocoa.framework in Sources */ = {isa = PBXBuildFile; fileRef = E023CBA31E9639DB00F91145 /* RxCocoa.framework */; };
 		E0CBBA681ECFB43200EA6108 /* AnyObserver+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA611ECFB43200EA6108 /* AnyObserver+Ex.swift */; };
 		E0CBBA691ECFB43200EA6108 /* Driver+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA621ECFB43200EA6108 /* Driver+Ex.swift */; };
@@ -44,14 +36,27 @@
 		E0CBBA6B1ECFB43200EA6108 /* UILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA641ECFB43200EA6108 /* UILabel+Rx.swift */; };
 		E0CBBA6C1ECFB43200EA6108 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA651ECFB43200EA6108 /* UIScrollView+Rx.swift */; };
 		E0CBBA6D1ECFB43200EA6108 /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA661ECFB43200EA6108 /* UIView+Rx.swift */; };
-		E0CBBA6E1ECFB43200EA6108 /* Variable+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA671ECFB43200EA6108 /* Variable+Ex.swift */; };
 		E0CBBA721ECFB44000EA6108 /* UIAlertController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA6F1ECFB44000EA6108 /* UIAlertController+Ex.swift */; };
 		E0CBBA731ECFB44000EA6108 /* UIApplication+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA701ECFB44000EA6108 /* UIApplication+Ex.swift */; };
 		E0CBBA741ECFB44000EA6108 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA711ECFB44000EA6108 /* UIBarButtonItem.swift */; };
 		E0CBBA761ECFB45000EA6108 /* LazyVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA751ECFB45000EA6108 /* LazyVariable.swift */; };
-		E0CBBA781ECFBAAA00EA6108 /* Undefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBBA771ECFBAAA00EA6108 /* Undefined.swift */; };
+		E0F240CD1F84A57D0034B8E7 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F240CC1F84A57D0034B8E7 /* UIImage+Ex.swift */; };
+		E0F240CF1F84A5D40034B8E7 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F240CE1F84A5D40034B8E7 /* Date+Ex.swift */; };
 		E0F768A41F18580D00993490 /* Asuha.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F768A31F18580D00993490 /* Asuha.swift */; };
-		E0F768A61F18586900993490 /* Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F768A51F18586900993490 /* Require.swift */; };
+		E0FCEADA1F8B5DEE005288CC /* Array+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAD11F8B5DED005288CC /* Array+Ex.swift */; };
+		E0FCEADB1F8B5DEE005288CC /* Bool+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAD21F8B5DED005288CC /* Bool+Ex.swift */; };
+		E0FCEADC1F8B5DEE005288CC /* Dictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAD31F8B5DED005288CC /* Dictionary+Ex.swift */; };
+		E0FCEADD1F8B5DEE005288CC /* Enum+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAD41F8B5DED005288CC /* Enum+Ex.swift */; };
+		E0FCEADE1F8B5DEE005288CC /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAD51F8B5DED005288CC /* Operators.swift */; };
+		E0FCEADF1F8B5DEE005288CC /* Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAD61F8B5DED005288CC /* Require.swift */; };
+		E0FCEAE01F8B5DEE005288CC /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAD71F8B5DED005288CC /* String+Ex.swift */; };
+		E0FCEAE11F8B5DEE005288CC /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAD81F8B5DED005288CC /* Then.swift */; };
+		E0FCEAE21F8B5DEE005288CC /* Undefined.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAD91F8B5DED005288CC /* Undefined.swift */; };
+		E0FCEAE41F8B61BF005288CC /* AnyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAE31F8B61BF005288CC /* AnyOptional.swift */; };
+		E0FCEAEA1F8B68DC005288CC /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAE61F8B68DB005288CC /* Injectable.swift */; };
+		E0FCEAEB1F8B68DC005288CC /* UITableView+Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAE71F8B68DB005288CC /* UITableView+Injectable.swift */; };
+		E0FCEAEC1F8B68DC005288CC /* UIView+Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAE81F8B68DB005288CC /* UIView+Injectable.swift */; };
+		E0FCEAED1F8B68DC005288CC /* UIViewController+Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAE91F8B68DB005288CC /* UIViewController+Injectable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,18 +70,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E00086C81F428C1800F2AFD0 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		E023CBA21E9639DB00F91145 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		E023CBA31E9639DB00F91145 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		E023CBA41E9639DB00F91145 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		E023CBA91E963A3000F91145 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		E023CBAE1E963AC400F91145 /* ObservableType+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+Ex.swift"; sourceTree = "<group>"; };
-		E023CBB01E963E3700F91145 /* AnyOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOptional.swift; sourceTree = "<group>"; };
 		E023CBB21E963E8700F91145 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		E023CBB41E963E8C00F91145 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E023CBB71E963EEB00F91145 /* SFSafariViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSafariViewController+Ex.swift"; sourceTree = "<group>"; };
 		E023CBB91E96483100F91145 /* SFSafariViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFSafariViewController+Rx.swift"; sourceTree = "<group>"; };
-		E023CBBB1E964A4000F91145 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		E023CBBD1E964CE300F91145 /* URL+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Ex.swift"; sourceTree = "<group>"; };
 		E023CBC71E964E8300F91145 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		E0443B841E8F9EDE003457DF /* Asuha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Asuha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,27 +93,35 @@
 		E0443BAE1E8FA0D6003457DF /* UIImageView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ex.swift"; sourceTree = "<group>"; };
 		E0443BAF1E8FA0D6003457DF /* UITableView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
 		E0443BB41E8FA254003457DF /* UIView+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
-		E0443BB61E8FA320003457DF /* String+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		E0443BB81E8FA356003457DF /* UIBarButtonItem+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Ex.swift"; sourceTree = "<group>"; };
-		E0443BBA1E8FA46F003457DF /* Array+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
 		E0443BBC1E8FA4FD003457DF /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
-		E0443BBE1E8FA546003457DF /* Dictionary+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ex.swift"; sourceTree = "<group>"; };
-		E05A38BB1E924093002A259A /* Bool+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Ex.swift"; sourceTree = "<group>"; };
-		E082B0901E90EFFA00379183 /* Enum+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enum+Ex.swift"; sourceTree = "<group>"; };
 		E0CBBA611ECFB43200EA6108 /* AnyObserver+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnyObserver+Ex.swift"; sourceTree = "<group>"; };
 		E0CBBA621ECFB43200EA6108 /* Driver+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Driver+Ex.swift"; sourceTree = "<group>"; };
 		E0CBBA631ECFB43200EA6108 /* PHImageManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PHImageManager+Rx.swift"; sourceTree = "<group>"; };
 		E0CBBA641ECFB43200EA6108 /* UILabel+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Rx.swift"; sourceTree = "<group>"; };
 		E0CBBA651ECFB43200EA6108 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
 		E0CBBA661ECFB43200EA6108 /* UIView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rx.swift"; sourceTree = "<group>"; };
-		E0CBBA671ECFB43200EA6108 /* Variable+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Variable+Ex.swift"; sourceTree = "<group>"; };
 		E0CBBA6F1ECFB44000EA6108 /* UIAlertController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Ex.swift"; sourceTree = "<group>"; };
 		E0CBBA701ECFB44000EA6108 /* UIApplication+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ex.swift"; sourceTree = "<group>"; };
 		E0CBBA711ECFB44000EA6108 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 		E0CBBA751ECFB45000EA6108 /* LazyVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyVariable.swift; sourceTree = "<group>"; };
-		E0CBBA771ECFBAAA00EA6108 /* Undefined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Undefined.swift; sourceTree = "<group>"; };
+		E0F240CC1F84A57D0034B8E7 /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
+		E0F240CE1F84A5D40034B8E7 /* Date+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		E0F768A31F18580D00993490 /* Asuha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asuha.swift; sourceTree = "<group>"; };
-		E0F768A51F18586900993490 /* Require.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
+		E0FCEAD11F8B5DED005288CC /* Array+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ex.swift"; sourceTree = "<group>"; };
+		E0FCEAD21F8B5DED005288CC /* Bool+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Ex.swift"; sourceTree = "<group>"; };
+		E0FCEAD31F8B5DED005288CC /* Dictionary+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ex.swift"; sourceTree = "<group>"; };
+		E0FCEAD41F8B5DED005288CC /* Enum+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enum+Ex.swift"; sourceTree = "<group>"; };
+		E0FCEAD51F8B5DED005288CC /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		E0FCEAD61F8B5DED005288CC /* Require.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
+		E0FCEAD71F8B5DED005288CC /* String+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		E0FCEAD81F8B5DED005288CC /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		E0FCEAD91F8B5DED005288CC /* Undefined.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Undefined.swift; sourceTree = "<group>"; };
+		E0FCEAE31F8B61BF005288CC /* AnyOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOptional.swift; sourceTree = "<group>"; };
+		E0FCEAE61F8B68DB005288CC /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		E0FCEAE71F8B68DB005288CC /* UITableView+Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Injectable.swift"; sourceTree = "<group>"; };
+		E0FCEAE81F8B68DB005288CC /* UIView+Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Injectable.swift"; sourceTree = "<group>"; };
+		E0FCEAE91F8B68DB005288CC /* UIViewController+Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Injectable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,14 +165,12 @@
 			children = (
 				E023CBA91E963A3000F91145 /* NSObject+Rx.swift */,
 				E023CBAE1E963AC400F91145 /* ObservableType+Ex.swift */,
-				E023CBB01E963E3700F91145 /* AnyOptional.swift */,
 				E0CBBA611ECFB43200EA6108 /* AnyObserver+Ex.swift */,
 				E0CBBA621ECFB43200EA6108 /* Driver+Ex.swift */,
 				E0CBBA631ECFB43200EA6108 /* PHImageManager+Rx.swift */,
 				E0CBBA641ECFB43200EA6108 /* UILabel+Rx.swift */,
 				E0CBBA651ECFB43200EA6108 /* UIScrollView+Rx.swift */,
 				E0CBBA661ECFB43200EA6108 /* UIView+Rx.swift */,
-				E0CBBA671ECFB43200EA6108 /* Variable+Ex.swift */,
 				E0CBBA751ECFB45000EA6108 /* LazyVariable.swift */,
 			);
 			path = Rx;
@@ -201,11 +209,12 @@
 			children = (
 				E0443B871E8F9EDE003457DF /* Asuha.h */,
 				E0F768A31F18580D00993490 /* Asuha.swift */,
-				E00086C81F428C1800F2AFD0 /* Then.swift */,
+				E0FCEAD01F8B5DED005288CC /* Swift */,
 				E023CBB61E963EB900F91145 /* SafariServices */,
 				E023CBA81E9639E800F91145 /* Rx */,
 				E0443BA31E8F9FC1003457DF /* Foundation */,
 				E0443BA21E8F9F91003457DF /* UIKit */,
+				E0FCEAE51F8B68DB005288CC /* Injection */,
 				E0443B881E8F9EDE003457DF /* Info.plist */,
 			);
 			path = Asuha;
@@ -225,6 +234,7 @@
 			children = (
 				E0443BAD1E8FA0D6003457DF /* UIColor+Ex.swift */,
 				E0443BAE1E8FA0D6003457DF /* UIImageView+Ex.swift */,
+				E0F240CC1F84A57D0034B8E7 /* UIImage+Ex.swift */,
 				E0443BAF1E8FA0D6003457DF /* UITableView+Ex.swift */,
 				E0443BAC1E8FA0D6003457DF /* UICollectionView+Ex.swift */,
 				E0443BB41E8FA254003457DF /* UIView+Ex.swift */,
@@ -241,17 +251,38 @@
 			isa = PBXGroup;
 			children = (
 				E0443BAA1E8FA0BE003457DF /* NSObject+Ex.swift */,
-				E0443BB61E8FA320003457DF /* String+Ex.swift */,
-				E0443BBA1E8FA46F003457DF /* Array+Ex.swift */,
-				E0443BBE1E8FA546003457DF /* Dictionary+Ex.swift */,
-				E082B0901E90EFFA00379183 /* Enum+Ex.swift */,
-				E05A38BB1E924093002A259A /* Bool+Ex.swift */,
-				E023CBBB1E964A4000F91145 /* Operators.swift */,
 				E023CBBD1E964CE300F91145 /* URL+Ex.swift */,
-				E0CBBA771ECFBAAA00EA6108 /* Undefined.swift */,
-				E0F768A51F18586900993490 /* Require.swift */,
+				E0F240CE1F84A5D40034B8E7 /* Date+Ex.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		E0FCEAD01F8B5DED005288CC /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				E0FCEAD11F8B5DED005288CC /* Array+Ex.swift */,
+				E0FCEAD21F8B5DED005288CC /* Bool+Ex.swift */,
+				E0FCEAD31F8B5DED005288CC /* Dictionary+Ex.swift */,
+				E0FCEAD41F8B5DED005288CC /* Enum+Ex.swift */,
+				E0FCEAD51F8B5DED005288CC /* Operators.swift */,
+				E0FCEAD61F8B5DED005288CC /* Require.swift */,
+				E0FCEAD71F8B5DED005288CC /* String+Ex.swift */,
+				E0FCEAD81F8B5DED005288CC /* Then.swift */,
+				E0FCEAD91F8B5DED005288CC /* Undefined.swift */,
+				E0FCEAE31F8B61BF005288CC /* AnyOptional.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		E0FCEAE51F8B68DB005288CC /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				E0FCEAE61F8B68DB005288CC /* Injectable.swift */,
+				E0FCEAE71F8B68DB005288CC /* UITableView+Injectable.swift */,
+				E0FCEAE81F8B68DB005288CC /* UIView+Injectable.swift */,
+				E0FCEAE91F8B68DB005288CC /* UIViewController+Injectable.swift */,
+			);
+			path = Injection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,39 +402,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0443BB11E8FA0D6003457DF /* UIColor+Ex.swift in Sources */,
-				E082B0911E90EFFA00379183 /* Enum+Ex.swift in Sources */,
 				E0CBBA6A1ECFB43200EA6108 /* PHImageManager+Rx.swift in Sources */,
-				E0F768A61F18586900993490 /* Require.swift in Sources */,
 				E0443BBD1E8FA4FD003457DF /* UIViewController+Ex.swift in Sources */,
+				E0FCEADF1F8B5DEE005288CC /* Require.swift in Sources */,
 				E0CBBA6C1ECFB43200EA6108 /* UIScrollView+Rx.swift in Sources */,
+				E0FCEAED1F8B68DC005288CC /* UIViewController+Injectable.swift in Sources */,
+				E0FCEADA1F8B5DEE005288CC /* Array+Ex.swift in Sources */,
+				E0FCEADD1F8B5DEE005288CC /* Enum+Ex.swift in Sources */,
+				E0FCEAEC1F8B68DC005288CC /* UIView+Injectable.swift in Sources */,
 				E0443BB91E8FA356003457DF /* UIBarButtonItem+Ex.swift in Sources */,
 				E0CBBA761ECFB45000EA6108 /* LazyVariable.swift in Sources */,
-				E05A38BC1E924093002A259A /* Bool+Ex.swift in Sources */,
 				E0CBBA721ECFB44000EA6108 /* UIAlertController+Ex.swift in Sources */,
+				E0FCEADB1F8B5DEE005288CC /* Bool+Ex.swift in Sources */,
 				E0CBBA6B1ECFB43200EA6108 /* UILabel+Rx.swift in Sources */,
-				E0CBBA6E1ECFB43200EA6108 /* Variable+Ex.swift in Sources */,
+				E0FCEAE41F8B61BF005288CC /* AnyOptional.swift in Sources */,
 				E0CBBA681ECFB43200EA6108 /* AnyObserver+Ex.swift in Sources */,
-				E00086C91F428C1800F2AFD0 /* Then.swift in Sources */,
 				E0CBBA691ECFB43200EA6108 /* Driver+Ex.swift in Sources */,
 				E0443BAB1E8FA0BE003457DF /* NSObject+Ex.swift in Sources */,
-				E023CBBC1E964A4000F91145 /* Operators.swift in Sources */,
+				E0FCEAE01F8B5DEE005288CC /* String+Ex.swift in Sources */,
 				E0CBBA6D1ECFB43200EA6108 /* UIView+Rx.swift in Sources */,
-				E0443BB71E8FA320003457DF /* String+Ex.swift in Sources */,
 				E0CBBA741ECFB44000EA6108 /* UIBarButtonItem.swift in Sources */,
+				E0FCEADE1F8B5DEE005288CC /* Operators.swift in Sources */,
 				E0443BB31E8FA0D6003457DF /* UITableView+Ex.swift in Sources */,
-				E0443BBB1E8FA46F003457DF /* Array+Ex.swift in Sources */,
 				E023CBBA1E96483100F91145 /* SFSafariViewController+Rx.swift in Sources */,
 				E023CBAF1E963AC400F91145 /* ObservableType+Ex.swift in Sources */,
 				E0F768A41F18580D00993490 /* Asuha.swift in Sources */,
+				E0FCEADC1F8B5DEE005288CC /* Dictionary+Ex.swift in Sources */,
+				E0F240CF1F84A5D40034B8E7 /* Date+Ex.swift in Sources */,
 				E0CBBA731ECFB44000EA6108 /* UIApplication+Ex.swift in Sources */,
-				E023CBB11E963E3700F91145 /* AnyOptional.swift in Sources */,
+				E0FCEAE11F8B5DEE005288CC /* Then.swift in Sources */,
 				E0443BB01E8FA0D6003457DF /* UICollectionView+Ex.swift in Sources */,
+				E0FCEAEB1F8B68DC005288CC /* UITableView+Injectable.swift in Sources */,
 				E023CBBE1E964CE300F91145 /* URL+Ex.swift in Sources */,
 				E0443BB21E8FA0D6003457DF /* UIImageView+Ex.swift in Sources */,
+				E0FCEAEA1F8B68DC005288CC /* Injectable.swift in Sources */,
 				E0443BB51E8FA254003457DF /* UIView+Ex.swift in Sources */,
-				E0CBBA781ECFBAAA00EA6108 /* Undefined.swift in Sources */,
-				E0443BBF1E8FA546003457DF /* Dictionary+Ex.swift in Sources */,
+				E0F240CD1F84A57D0034B8E7 /* UIImage+Ex.swift in Sources */,
 				E023CBB81E963EEB00F91145 /* SFSafariViewController+Ex.swift in Sources */,
+				E0FCEAE21F8B5DEE005288CC /* Undefined.swift in Sources */,
 				E023CBAA1E963A3000F91145 /* NSObject+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,7 +591,7 @@
 				);
 				INFOPLIST_FILE = Asuha/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bangohan.Asuha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -582,7 +618,7 @@
 				);
 				INFOPLIST_FILE = Asuha/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bangohan.Asuha;
 				PRODUCT_NAME = "$(TARGET_NAME)";

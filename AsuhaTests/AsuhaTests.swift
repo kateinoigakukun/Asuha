@@ -31,6 +31,8 @@ class AsuhaTests: XCTestCase {
         let url = URL(string: "https://example.com?q=query&page=1")!
         XCTAssertEqual(url.queryItem["q"], "query")
         XCTAssertEqual(url.queryItem["page"], "1")
+
+
     }
 
     func testDownload() {

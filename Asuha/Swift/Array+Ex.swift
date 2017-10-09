@@ -46,12 +46,10 @@ public extension Asuha where Base: AnyArray {
 }
 
 public extension Asuha where Base: AnyArray, Base.Element: Equatable {
-    public mutating func appendUnique(element: Base.Element) {
 
+    public mutating func appendUnique(element: Base.Element) {
         if base.contains(element) { return }
         base.append(element)
-        var s = ["s"]
-        s.append(contentsOf: [""])
     }
 
     public mutating func appendUnique(contentsOf: [Base.Element]) {

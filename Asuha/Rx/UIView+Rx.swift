@@ -10,8 +10,8 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-extension Reactive where Base: UIView {
-    public var backgroundColor: Binder<UIColor> {
+public extension Reactive where Base: UIView {
+    var backgroundColor: Binder<UIColor> {
         return Binder(base) { view, backgroundColor in
             view.backgroundColor = backgroundColor
         }

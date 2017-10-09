@@ -6,7 +6,6 @@
 //  Copyright © 2017年 bangohan. All rights reserved.
 //
 
-import Foundation
 import RxSwift
 
 public extension ObservableType {
