@@ -57,6 +57,7 @@
 		E0FCEAEB1F8B68DC005288CC /* UITableView+Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAE71F8B68DB005288CC /* UITableView+Injectable.swift */; };
 		E0FCEAEC1F8B68DC005288CC /* UIView+Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAE81F8B68DB005288CC /* UIView+Injectable.swift */; };
 		E0FCEAED1F8B68DC005288CC /* UIViewController+Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAE91F8B68DB005288CC /* UIViewController+Injectable.swift */; };
+		E0FCEAEF1F8C48D0005288CC /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FCEAEE1F8C48D0005288CC /* UIViewController+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		E0FCEAE71F8B68DB005288CC /* UITableView+Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Injectable.swift"; sourceTree = "<group>"; };
 		E0FCEAE81F8B68DB005288CC /* UIView+Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Injectable.swift"; sourceTree = "<group>"; };
 		E0FCEAE91F8B68DB005288CC /* UIViewController+Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Injectable.swift"; sourceTree = "<group>"; };
+		E0FCEAEE1F8C48D0005288CC /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				E0CBBA651ECFB43200EA6108 /* UIScrollView+Rx.swift */,
 				E0CBBA661ECFB43200EA6108 /* UIView+Rx.swift */,
 				E0CBBA751ECFB45000EA6108 /* LazyVariable.swift */,
+				E0FCEAEE1F8C48D0005288CC /* UIViewController+Rx.swift */,
 			);
 			path = Rx;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				E0F768A41F18580D00993490 /* Asuha.swift in Sources */,
 				E0FCEADC1F8B5DEE005288CC /* Dictionary+Ex.swift in Sources */,
 				E0F240CF1F84A5D40034B8E7 /* Date+Ex.swift in Sources */,
+				E0FCEAEF1F8C48D0005288CC /* UIViewController+Rx.swift in Sources */,
 				E0CBBA731ECFB44000EA6108 /* UIApplication+Ex.swift in Sources */,
 				E0FCEAE11F8B5DEE005288CC /* Then.swift in Sources */,
 				E0443BB01E8FA0D6003457DF /* UICollectionView+Ex.swift in Sources */,
