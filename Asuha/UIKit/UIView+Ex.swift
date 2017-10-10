@@ -47,7 +47,7 @@ extension Asuha where Base: UIView {
 }
 
 extension Asuha where Base: UIView {
-    func addConstraints(for childView: UIView, insets: UIEdgeInsets = .zero) {
+    public func addConstraints(for childView: UIView, insets: UIEdgeInsets = .zero) {
         childView.translatesAutoresizingMaskIntoConstraints = false
 
         base.topAnchor.constraint(equalTo: childView.topAnchor, constant: insets.top).isActive = true
@@ -56,7 +56,7 @@ extension Asuha where Base: UIView {
         base.trailingAnchor.constraint(equalTo: childView.trailingAnchor, constant: insets.right).isActive = true
     }
 
-    func addSizeConstraints(for childView: UIView, widthMultiplier: CGFloat = 1.0, heightMultiplier: CGFloat = 1.0) {
+    public func addSizeConstraints(for childView: UIView, widthMultiplier: CGFloat = 1.0, heightMultiplier: CGFloat = 1.0) {
         base.widthAnchor.constraint(equalTo: childView.widthAnchor, multiplier: widthMultiplier).isActive = true
         base.heightAnchor.constraint(equalTo: childView.heightAnchor, multiplier: heightMultiplier).isActive = true
     }
